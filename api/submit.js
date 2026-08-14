@@ -21,19 +21,26 @@ function ghlHeaders(token) {
   };
 }
 
-async function ghlFetch(token, path, init) {
-  const res = await fetch(`${GHL_BASE}${path}`, {
-    ...init,
-    headers: { ...ghlHeaders(token), ...(init?.headers || {}) },
-  });
-  let data = null;
-  const text = await res.text();
+async function ghlFetch(token, path, init, timeoutMs = 8000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    data = text ? JSON.parse(text) : null;
-  } catch {
-    data = text;
+    const res = await fetch(`${GHL_BASE}${path}`, {
+      ...init,
+      signal: controller.signal,
+      headers: { ...ghlHeaders(token), ...(init?.headers || {}) },
+    });
+    let data = null;
+    const text = await res.text();
+    try {
+      data = text ? JSON.parse(text) : null;
+    } catch {
+      data = text;
+    }
+    return { status: res.status, data };
+  } finally {
+    clearTimeout(timer);
   }
-  return { status: res.status, data };
 }
 
 // Split a full name into first / last. Single word -> firstName only.
