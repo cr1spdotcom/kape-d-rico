@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kape d' Rico — Black coffee. Clear mind.</title>
+  <meta name="description" content="Single-origin beans. One grinder per brew method. Nothing added, nothing hidden. Kape d' Rico, est. 2019." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">Kape d&rsquo; Rico</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#brew">Brew</a>
+        <a href="#story">Story</a>
+        <a href="#space">Space</a>
+        <a href="#visit">Visit</a>
+        <a href="#visit" class="btn btn--ghost nav__cta">Find Us</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="menu-overlay__links" aria-label="Mobile">
+      <a href="#brew">Brew</a>
+      <a href="#story">Story</a>
+      <a href="#space">Space</a>
+      <a href="#visit">Visit</a>
+      <a href="#visit" class="btn btn--ghost">Find Us</a>
+    </nav>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__bg" role="img" aria-label="Black-and-white close-up of espresso being pulled"></div>
+    <div class="hero__content container">
+      <h1 class="hero__headline">
+        <span class="hero__line hero__line--roman">Coffee without</span>
+        <span class="hero__line hero__line--italic">compromise.</span>
+      </h1>
+      <p class="hero__sub">
+        Single-origin beans. One grinder per brew method.
+        Nothing added, nothing hidden.
+      </p>
+      <div class="hero__ctas">
+        <a href="#brew" class="btn btn--ghost">View the Brew List</a>
+        <a href="#story" class="link-plain">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__stats container">
+      <span>Est. 2019</span>
+      <span>6 Origins</span>
+      <span>3 Brew Methods</span>
+      <span>Mon&ndash;Sat</span>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHY / ABOUT ============ -->
+  <section class="about section section--light" id="story">
+    <div class="container">
+      <div class="about__quote-block reveal">
+        <hr class="rule" />
+        <blockquote class="about__quote">
+          We don&rsquo;t roast for the bag. We roast for the cup &mdash; the one
+          in front of you, right now.
+        </blockquote>
+        <hr class="rule" />
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            Kape d&rsquo; Rico started in 2019 with one roaster, one bar,
+            and a short list of farms we could name from memory. Most of those
+            farms are still on the list. The ones that aren&rsquo;t were replaced
+            slowly, after visits, never by catalogue.
+          </p>
+          <p>
+            We buy six origins a year &mdash; no more. Each is roasted for a
+            single method and served until it runs out. When a coffee is gone,
+            it&rsquo;s gone. We&rsquo;d rather say no than serve a guess.
+          </p>
+        </div>
+        <figure class="about__figure reveal">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="Barista at work behind the bar, black and white" loading="lazy" />
+          <figcaption class="caption">the first roast of the day</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BREW LIST / MENU ============ -->
+  <section class="menu section section--dark" id="brew">
+    <div class="container">
+      <p class="eyebrow reveal">The Brew List</p>
+      <h2 class="section-title reveal"><em>At the bar.</em></h2>
+
+      <div class="menu__group reveal">
+        <h3 class="menu__group-name">Espresso</h3>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=200&q=80" alt="Espresso shot" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">01</span>Espresso</p>
+            <p class="menu__desc">Seasonal blend. 18 grams in, 36 out, nothing else.</p>
+          </div>
+          <span class="menu__price">&#8369;130</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1521302200778-33500795e128?auto=format&fit=crop&w=200&q=80" alt="Long black coffee" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">02</span>Long Black</p>
+            <p class="menu__desc">Double shot over hot water. Crema intact.</p>
+          </div>
+          <span class="menu__price">&#8369;150</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=200&q=80" alt="Cortado in a small glass" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">03</span>Cortado</p>
+            <p class="menu__desc">Equal parts espresso and steamed milk. Served warm, not hot.</p>
+          </div>
+          <span class="menu__price">&#8369;160</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=200&q=80" alt="Flat white with latte art" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">04</span>Flat White</p>
+            <p class="menu__desc">Sagada espresso under thin milk. No syrup. Don&rsquo;t ask.</p>
+          </div>
+          <span class="menu__price">&#8369;170</span>
+        </div>
+      </div>
+
+      <div class="menu__group reveal">
+        <h3 class="menu__group-name">Filter</h3>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&q=80" alt="Pour over brewing" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">05</span>V60 Pour Over</p>
+            <p class="menu__desc">Your choice of the six origins. Brewed to order, four minutes.</p>
+          </div>
+          <span class="menu__price">&#8369;180</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=200&q=80" alt="Coffee beans on dark surface" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">06</span>Kalita Wave</p>
+            <p class="menu__desc">Flat-bed brew for the darker roasts. Heavier body, quiet finish.</p>
+          </div>
+          <span class="menu__price">&#8369;180</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?auto=format&fit=crop&w=200&q=80" alt="Coffee equipment on counter" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">07</span>Aeropress</p>
+            <p class="menu__desc">Pressed, not steeped. The fastest cup on the list.</p>
+          </div>
+          <span class="menu__price">&#8369;170</span>
+        </div>
+      </div>
+
+      <div class="menu__group reveal">
+        <h3 class="menu__group-name">Cold</h3>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=200&q=80" alt="Cold brew in a glass" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">08</span>Cold Brew</p>
+            <p class="menu__desc">Eighteen hours, coarse grind, served over one large cube.</p>
+          </div>
+          <span class="menu__price">&#8369;190</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=200&q=80" alt="Coffee tonic with ice" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">09</span>Cold Brew Tonic</p>
+            <p class="menu__desc">Cold brew concentrate, tonic water, expressed calamansi peel.</p>
+          </div>
+          <span class="menu__price">&#8369;210</span>
+        </div>
+      </div>
+
+      <div class="menu__group reveal">
+        <h3 class="menu__group-name">To Eat</h3>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=200&q=80" alt="Butter croissant" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">10</span>Butter Croissant</p>
+            <p class="menu__desc">Laminated in-house. Baked at six, usually gone by ten.</p>
+          </div>
+          <span class="menu__price">&#8369;120</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=200&q=80" alt="Basque cheesecake slice" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">11</span>Burnt Basque Cheesecake</p>
+            <p class="menu__desc">Dark top, soft center. Pairs with the long black.</p>
+          </div>
+          <span class="menu__price">&#8369;180</span>
+        </div>
+        <div class="menu__row">
+          <img class="menu__thumb" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=200&q=80" alt="Sourdough bread" loading="lazy" />
+          <div class="menu__row-text">
+            <p class="menu__name"><span class="menu__num">12</span>Sourdough Toast</p>
+            <p class="menu__desc">Thick cut, salted butter. Honey if you insist.</p>
+          </div>
+          <span class="menu__price">&#8369;110</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE / FEATURED ============ -->
+  <section class="featured section--light">
+    <div class="featured__layout">
+      <div class="featured__text reveal">
+        <p class="eyebrow">This Month</p>
+        <h2 class="featured__headline">
+          <em>Sagada, washed.<br />Roasted for filter.</em>
+        </h2>
+        <p class="featured__price">&#8369;520 &mdash; 250g</p>
+        <p class="featured__desc">
+          Grown above 1,500 meters in Mountain Province and washed at the farm.
+          Expect quiet sweetness, a clean finish, and nothing that needs explaining.
+        </p>
+        <a href="#visit" class="link-underline">Order This</a>
+      </div>
+      <figure class="featured__figure reveal">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80" alt="Roasted coffee beans, monochrome" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ THE SPACE ============ -->
+  <section class="space section section--dark" id="space">
+    <div class="container">
+      <p class="eyebrow reveal">The Space</p>
+      <h2 class="section-title reveal"><em>The room.</em></h2>
+      <div class="space__grid">
+        <figure class="space__cell space__cell--tl reveal">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80" alt="Espresso grinder station" loading="lazy" />
+          <figcaption class="caption">the grind station</figcaption>
+        </figure>
+        <figure class="space__cell space__cell--tr reveal">
+          <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=80" alt="Window seat with morning light" loading="lazy" />
+          <figcaption class="caption">window seat, 7am</figcaption>
+        </figure>
+        <figure class="space__cell space__cell--bl reveal">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="The long bar" loading="lazy" />
+          <figcaption class="caption">the long bar</figcaption>
+        </figure>
+        <figure class="space__cell space__cell--br reveal">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=900&q=80" alt="Empty cafe after closing" loading="lazy" />
+          <figcaption class="caption">after close</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOICES / TESTIMONIALS ============ -->
+  <section class="voices section section--light">
+    <div class="container container--narrow">
+      <p class="eyebrow reveal">Voices</p>
+      <div class="voices__list">
+        <blockquote class="voice reveal">
+          <p class="voice__quote">The flat white here ended a ten-year sugar habit. I didn&rsquo;t plan that.</p>
+          <footer class="voice__by">Mara S. &middot; Quezon City</footer>
+        </blockquote>
+        <blockquote class="voice reveal">
+          <p class="voice__quote">No music some mornings. Just the grinder and the rain. I get more done here than at my desk.</p>
+          <footer class="voice__by">Diego R. &middot; Makati</footer>
+        </blockquote>
+        <blockquote class="voice reveal">
+          <p class="voice__quote">I asked what was in the cold brew tonic. They told me, in full, in one sentence.</p>
+          <footer class="voice__by">Hannah L. &middot; Pasig</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT / FIND US ============ -->
+  <section class="visit section section--dark" id="visit">
+    <div class="container">
+      <p class="eyebrow reveal">Find Us</p>
+      <h2 class="section-title reveal"><em>Visit.</em></h2>
+
+      <div class="visit__cols reveal">
+        <div class="visit__col">
+          <p class="visit__label">Address</p>
+          <p class="visit__value">214 Mabini Street<br />Poblacion, Makati<br />Metro Manila</p>
+        </div>
+        <div class="visit__col">
+          <p class="visit__label">Hours</p>
+          <p class="visit__value">Mon&ndash;Fri &middot; 7:00&ndash;18:00<br />Sat &middot; 8:00&ndash;17:00<br />Sun &middot; Closed</p>
+        </div>
+        <div class="visit__col">
+          <p class="visit__label">Contact</p>
+          <p class="visit__value">hello@kapedrico.ph<br />+63 917 555 0142</p>
+        </div>
+      </div>
+
+      <div class="visit__map reveal" aria-label="Map placeholder">
+        <svg class="visit__crosshair" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="12" stroke="#7A9E8E" stroke-width="1" />
+          <line x1="20" y1="0" x2="20" y2="10" stroke="#7A9E8E" stroke-width="1" />
+          <line x1="20" y1="30" x2="20" y2="40" stroke="#7A9E8E" stroke-width="1" />
+          <line x1="0" y1="20" x2="10" y2="20" stroke="#7A9E8E" stroke-width="1" />
+          <line x1="30" y1="20" x2="40" y2="20" stroke="#7A9E8E" stroke-width="1" />
+        </svg>
+        <p class="visit__map-address">214 Mabini St, Poblacion, Makati</p>
+      </div>
+
+      <form class="visit__form reveal" id="visitForm" novalidate>
+        <div class="visit__form-grid">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="f-mobile">Mobile</label>
+            <input type="tel" id="f-mobile" name="mobile" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label for="f-date">Date</label>
+            <input type="date" id="f-date" name="date" required />
+          </div>
+          <div class="field">
+            <label for="f-party">Party Size</label>
+            <input type="number" id="f-party" name="party" min="1" max="12" required />
+          </div>
+          <div class="field field--wide">
+            <label for="f-notes">Notes</label>
+            <textarea id="f-notes" name="notes" rows="4"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--ghost">Send Request</button>
+        <p class="visit__confirm" id="visitConfirm" hidden>Noted. We&rsquo;ll reach you by text.</p>
+        <p class="visit__demo-note">We&rsquo;ll reply by text to confirm your table.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="footer__logo">Kape d&rsquo; Rico</a>
+        <p class="footer__descriptor">Black coffee. Clear mind.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__label">Explore</p>
+          <nav class="footer__links" aria-label="Footer">
+            <a href="#brew">Brew</a>
+            <a href="#story">Story</a>
+            <a href="#space">Space</a>
+            <a href="#visit">Visit</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Hours &amp; Contact</p>
+          <p class="footer__text">
+            Mon&ndash;Fri 7:00&ndash;18:00 &middot; Sat 8:00&ndash;17:00<br />
+            214 Mabini St, Poblacion, Makati<br />
+            hello@kapedrico.ph &middot; +63 917 555 0142
+          </p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Social</p>
+          <nav class="footer__links footer__links--social" aria-label="Social">
+            <a href="#" rel="noopener">Instagram</a>
+            <a href="#" rel="noopener">Facebook</a>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer__rule" />
+      <p class="footer__copy">&copy; 2026 Kape d&rsquo; Rico. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
